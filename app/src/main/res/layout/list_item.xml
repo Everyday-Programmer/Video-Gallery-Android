@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5sp"
+    android:id="@+id/root">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        app:cardCornerRadius="5sp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:id="@+id/list_image"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_title"
+                android:layout_toRightOf="@id/list_image"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_toEndOf="@id/list_image"
+                android:layout_marginStart="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/app_name"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:layout_below="@id/list_title"
+                android:layout_toRightOf="@id/list_image"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_toEndOf="@id/list_image"
+                android:id="@+id/list_duration"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
