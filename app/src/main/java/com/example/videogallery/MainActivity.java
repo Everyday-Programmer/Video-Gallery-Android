@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         if (hrs > 0){
             videoDuration = String.format("%02d hrs, %02d min, %02d sec", hrs, min, sec);
         } else {
-            videoDuration = String.format("%02d min, %02d sec");
+            videoDuration = String.format("%02d min, %02d sec", min, sec);
         }
         return videoDuration;
     }
